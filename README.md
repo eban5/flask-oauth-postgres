@@ -4,19 +4,10 @@
 
 The Catalog App is an example RESTful CRUD web application built with the Flask framework, Boostrap v4, and using the Google Sign-in Third Party Authentication mechanism.
 
-## How to run the project
+```
+IP Address: 52.14.20.77
+SSH Port: 2200
+Complete Web App URL: http://52.14.20.77.xip.io/
+```
 
-You'll need to configure a few things before you can successfully run this project.
-
-1. Install Vagrant and Virtualbox onto your machine
-2. Clone this repository
-3. Change directories `cd` to the cloned repository directory
-4. Launch the Vagrant VM with `vagrant up`
-5. Install dependencies with `sudo pip install werkzeug==0.8.3, flask==0.9, Flask-Login==0.1.3`
-6. Run the database setup script with `python database_setup.py`, which will populate the database with demo data
-7. Build the data model by running `python models.py`
-8. Run the application with `python application.py`
-
-The application will now be running on http://localhost:8000
-
-
+A few of the libraries used in this project were Flask, SQL-Alchemy, psycopg2 (to talk to Postgres), and PostgresSQL. The web server was configured to use a WSGI file to make the Flask app accessible by Apache (our web server software). Apache was configured to point at that WSGI file to then server requests/responses to our web application. 
