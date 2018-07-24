@@ -11,3 +11,5 @@ Complete Web App URL: http://52.14.20.77.xip.io/
 ```
 
 A few of the libraries used in this project were Flask, SQL-Alchemy, psycopg2 (to talk to Postgres), and PostgresSQL. The web server was configured to use a WSGI file to make the Flask app accessible by Apache (our web server software). Apache was configured to point at that WSGI file to then server requests/responses to our web application. 
+
+The blog post found here was very useful in helping me understand what it would take to replace SQLite with a full-blown Postgres database. https://blog.theodo.fr/2017/03/developping-a-flask-web-app-with-a-postresql-database-making-all-the-possible-errors/
