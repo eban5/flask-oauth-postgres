@@ -1,0 +1,26 @@
+<!-- <div class="row top-menu"> -->
+<nav class="navbar navbar-dark bg-dark">
+    <span class="navbar-brand mb-0 h1 text-thin">
+      <div class="app-name"><a href = '{{url_for('showCategories')}}'><h1>Catalog App</h1></a></div>
+    </span>
+    <form class="form-inline my-2 my-lg-0">
+        <div class="user-avatar">
+            <img id="avatar" src="/static/costanza.jpg">
+        </div>
+        <div class="user-name">
+        <ul>
+            <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Art Vandalay
+                    </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    {% if 'username' not in session %}
+                    <a class="dropdown-item" href="{{url_for('showLogin')}}">Login</a> {% else %}
+                    <a class="dropdown-item" href="{{url_for('gdisconnect')}}">Logout</a> {% endif %}
+                </div>
+
+            </li>
+        </ul>
+        </div>
+    </form>
+</nav>

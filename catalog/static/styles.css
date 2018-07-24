@@ -1,0 +1,107 @@
+body {
+    font-family: opensans, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #333333;
+}
+
+.alert {
+    padding: 10px;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+.alert-warning {
+    background: rgba(238, 214, 144, 0.25);
+    /* Yellow */
+}
+
+.alert-success {
+    background: rgba(46, 139, 87, 0.25);
+    /* SeaGreen */
+}
+
+.alert-info {
+    background: rgba(70, 130, 180, 0.25);
+    /* SteelBlue */
+}
+
+
+/* The close button */
+
+.closebtn {
+    margin-left: 15px;
+    color: #333333;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+
+
+textarea {
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    border: solid 1px #999999;
+    padding: 6px;
+    margin: 5px 0;
+    font-size: 16px;
+    width: 288px;
+    height: 50px;
+}
+
+dl,
+ol,
+ul {
+    margin-bottom: 0.5rem !important;
+}
+
+ul,
+li,
+a {
+    /* list-style-type: none !important; */
+    list-style: none !important;
+}
+
+.app-name a {
+    text-decoration: none;
+    color: orange;
+}
+
+.app-name a:hover {
+    text-decoration: none;
+    color: yellow;
+}
+
+.user-avatar {
+    display: inline-block;
+    padding-right: 2px;
+}
+
+.user-name {
+    margin: auto;
+}
+
+.user-name a {
+    color: orange;
+    text-decoration: none;
+}
+
+.user-name a:hover {
+    color: orange;
+    text-decoration: none;
+}
+
+
+#avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; // background-image: url("/static/costanza.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
