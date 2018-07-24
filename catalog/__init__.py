@@ -48,7 +48,7 @@ session = DBSession()
 # Base.metadata.bind = engine
 
 CLIENT_ID = json.loads(
-    open('/var/www/catalog/client_secret.json', 'r').read())['web']['client_id']
+    open('client_secret.json', 'r').read())['web']['client_id']
 APPLICATION_NAME = "Catalog App"
 
 @app.route('/login')
@@ -78,7 +78,7 @@ def gconnect():
 
     try:
         # Upgrade the authorization code into a credentials object
-        oauth_flow = flow_from_clientsecrets('/var/www/catalog/client_secret.json', scope='')
+        oauth_flow = flow_from_clientsecrets('client_secret.json', scope='')
         oauth_flow.redirect_uri = 'postmessage'
         credentials = oauth_flow.step2_exchange(code)
     except FlowExchangeError:
