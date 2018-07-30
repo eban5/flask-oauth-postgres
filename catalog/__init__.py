@@ -17,7 +17,7 @@ app = Flask(__name__)
 
 POSTGRES = {
     'user': 'postgres',
-    'pw': 'postgres',
+    'pw': 'POSTGRES_PASSWORD',
     'db': 'catalog',
     'host': 'localhost',
     'port': '5432',
@@ -34,7 +34,7 @@ import models
 from models import Base, Category, Item, User
 
 # engine = create_engine('sqlite:///categoryapp.db')
-engine = create_engine('postgresql+psycopg2://postgres:postgres@localhost/catalog', pool_pre_ping=True)
+engine = create_engine('postgresql+psycopg2://postgres:POSTGRES_PASSWORD@localhost/catalog', pool_pre_ping=True)
 Base.metadata.bind = engine
 DBSession = sessionmaker(bind=engine)
 session = DBSession()
