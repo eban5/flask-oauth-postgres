@@ -5,4 +5,4 @@ logging.basicConfig(stream=sys.stderr)
 sys.path.insert(0,"/var/www/catalog")
 
 from catalog import app as application
-application.secret_key = 'HeW_KV6Af2xeQWTzxs0qIHgg'
+application.secret_key = 'APP_SECRET'
